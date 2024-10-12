@@ -1,0 +1,126 @@
+/* Container utama */
+.berita-container {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* List berita, memberikan jarak dan overflow jika lebih dari 4 */
+.berita-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  max-height: 800px;
+  scrollbar-width: thin;
+  padding-right: 10px;
+}
+
+.berita-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.berita-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* Kartu berita individual */
+.berita-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.berita-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Gambar berita */
+.berita-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Konten berita (judul, deskripsi, dan tombol) */
+.berita-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.berita-judul {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.berita-deskripsi {
+  font-size: 1rem;
+  color: #555;
+}
+
+.berita-link {
+  align-self: flex-end;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.lihat-lainnya, .lihat-lebih-minim {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e91e63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+  .berita-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .berita-logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .berita-content {
+    width: 100%;
+  }
+
+  .berita-judul {
+    font-size: 1.2rem;
+  }
+
+  .berita-deskripsi {
+    font-size: 0.9rem;
+  }
+
+  .berita-link {
+    align-self: flex-end;
+    font-size: 0.9rem;
+  }
+
+  /* Memastikan padding dan ukuran tetap pas di layar kecil */
+  .berita-container {
+    padding: 10px;
+  }
+}

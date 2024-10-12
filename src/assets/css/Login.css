@@ -1,0 +1,138 @@
+.custom-login {
+  width: 450px;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #fafafa;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-login:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.custom-login h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #333;
+}
+
+.custom-login .login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.custom-login .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-login label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.custom-login input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-login input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+.custom-login .password-input {
+  position: relative;
+}
+
+.custom-login .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.custom-login .error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.custom-login .form-group label input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #007bff;
+}
+
+.custom-login button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px; 
+}
+
+.custom-login button:hover {
+  background-color: #0056b3; 
+}
+
+.custom-login .additional-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.custom-login .additional-links a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: text-decoration 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.custom-login .additional-links a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+.success {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 1.2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.success:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .custom-login {
+    width: 90%;
+  }
+
+  .custom-login button {
+    font-size: 14px;
+  }
+}

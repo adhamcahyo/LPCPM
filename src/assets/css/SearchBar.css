@@ -1,0 +1,34 @@
+.campaign-search {
+    display: flex;
+    align-items: center;
+    background-color: #ff69b4; /* Warna latar belakang search bar */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.campaign-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px 40px 10px 20px; /* Mengatur padding untuk memberi ruang untuk ikon */
+    border: 1px solid #ff69b4; /* Warna border */
+    border-radius: 5px;
+    width: 100%; /* Pastikan input mengambil lebar penuh */
+}
+
+.clear-icon {
+    position: absolute;
+    right: 50px; /* Mengatur posisi ikon 'X' */
+    cursor: pointer;
+    color: #ff69b4;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px; /* Mengatur posisi ikon pencarian */
+    color: #ff69b4;
+}

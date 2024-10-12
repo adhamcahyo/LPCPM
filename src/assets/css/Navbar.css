@@ -1,0 +1,158 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px; /* Tambah lebar padding */
+  background-color: #9e0b66;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.navbar:hover {
+  background-color: #96077e;
+}
+
+.menuIcon {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.menuIcon:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+.logo {
+  border-radius: 50%;
+  width: 120px; /* Tentukan ukuran logo */
+  height: auto;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.logo:hover {
+  box-shadow: 0 0 15px rgba(255, 221, 87, 0.7), 0 0 30px rgba(255, 221, 87, 0.5);
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin-left: 20px; /* Kurangi margin agar tidak terlalu renggang */
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 20px; /* Tambah ukuran font */
+  font-weight: 600;
+  color: white;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ffdd57;
+}
+
+.navLink:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #ffdd57;
+  transition: width 0.3s;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+}
+
+.navLink:hover:after {
+  width: 100%;
+}
+
+.loginLink {
+  color: #00bfff;
+  margin-left: 20px;
+}
+
+.registerLink {
+  color: #ffdd57;
+  margin-left: 10px;
+}
+.customButton {
+  background-color: #ffdd57;
+  color: #001f3f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.customButton:hover {
+  background-color: #ffc300;
+}
+
+.customButton:focus {
+  outline: none;
+}
+
+.navItem {
+  margin-left: 20px;
+}
+
+.navItem:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .navItem {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px; /* Kurangi padding pada layar kecil */
+  }
+
+  .navLinks {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .navItem {
+    margin: 10px 0;
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .menuIcon {
+    font-size: 30px;  
+    cursor: pointer;
+    display: block;
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 769px) {
+  .menuIcon {
+    display: none;
+  }
+}

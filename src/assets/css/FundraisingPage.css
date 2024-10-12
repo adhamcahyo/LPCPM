@@ -1,0 +1,81 @@
+.fundraising-container {
+  font-family: Arial, sans-serif;
+}
+
+.fundraising-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff69b4;
+  color: white;
+}
+
+.fundraising-logo {
+  width: 100px;
+  height: auto;
+}
+
+.fundraising-top-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: red;
+}
+
+.fundraising-section {
+  width: 22%;
+  text-align: center;
+  background-color: #ff69b4;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.fundraising-section h3 {
+  margin-top: 10px;
+}
+
+.fundraising-section p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.fundraising-icon {
+  font-size: 40px;
+}
+
+.fundraising-bottom-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: red;
+  color: white;
+}
+
+.fundraising-counter {
+  text-align: center;
+  background-color: #ff69b4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.fundraising-counter-icon {
+  font-size: 50px;
+}
+
+.fundraising-counter h2 {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
